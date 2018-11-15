@@ -7,7 +7,7 @@ int arr[105][105]; //行代表的是房间编号，每一列存放该房间的�
 int m,n;
 int ans = 105;
 void Solution(int index,int number){
-	if(index >= ans) return ;
+	if(index >= ans) return ; //##############关键的一步 剪枝#####################
 	if(number > n ){
 		if(index < ans)
 			ans = index;
