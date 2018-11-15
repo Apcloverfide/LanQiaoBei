@@ -16,7 +16,7 @@ using namespace std;
 int v[1000000][4]; //上下左右 一共四维 如果没有相连就为0
 int m,n,k; //m行n列
 bool vis[1000000]; //标志节点是否被访问过
-void dfs(int x){
+void dfs(int x){ //递归
 	if(x <= 0 || x > m*n || vis[x] == true)
 		return;
 	vis[x] = true;
